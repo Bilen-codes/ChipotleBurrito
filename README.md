@@ -15,8 +15,8 @@ catagories) and for each it will generate a random number which will be choosen 
 ## Test cases 
 for (row = 0, row < ingredient's 2Darray length, row ++){
 totalprice starts at 3.0.
-  1.row = 0   random number generated = 2 brown rice +0.50. 
-    row = 1   random number generated = 4 sofritas +0.50. 
+  1.row = 0   random number generated = 2 brown rice +0.50\ 
+    row = 1   random number generated = 4 sofritas +0.50. \
     row = 2   random number generated = 0 pinto +0.50. 
     row = 3   random number generated = 1 medium +0.50. 
     row = 4   random number generated = 2 none.     
