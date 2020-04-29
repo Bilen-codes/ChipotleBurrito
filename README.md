@@ -1,8 +1,8 @@
-###ChipotleBurrito
+# ChipotleBurrito
 This program will implement a robot that assembles 25 burritos and,
  displays all ingredients used along with the final price of the burrito.
 
-##Pseudo-code 
+## Pseudo-code 
 1. The program will first save all the ingident options in a 2D array
 2. The program will call on a method that will generate the random commination
 of the ingredients and send the final string to be displayed 25 times 
@@ -12,7 +12,7 @@ catagories) and for each it will generate a random number which will be choosen 
 5. Inside the loop that will call on this method will be a print statment displaying the final string for each round. 
 6. After displaying the 25 burritos assembled the program will exit. 
 
-##Test cases 
+## Test cases 
 for (row = 0, row < ingredient's 2Darray length, row ++){
 totalprice starts at 3.0.
   1.row = 0   random number generated = 2 brown rice +0.50
