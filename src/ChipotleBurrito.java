@@ -1,35 +1,30 @@
-import java.util.ArrayList;
-
 /*This program will implement a robot that assembles 25 burritos and,
- displays all ingredients used along with the final price of the burrito.*/
+ * displays all ingredients used along with the final price of the burrito.
+ * @author Bilen-wrk
+ */
+
 public class ChipotleBurrito {
     public static void main(String[] args) {
-        //creates ChipotleBurrito object so we call a method in the class
-        ChipotleBurrito cbObj = new ChipotleBurrito();
         int burrito = 1;
         String finalStr = "";
-
-        String [][] allIng = {{"white rice", "brown rice", "no rice", "all rice"},
-                { "chicken", "steak", "carnidas", "chorizo", "sofritas", "veggie meat", "no meat", "all meat"},
+        String[][] allIng = {{"white rice", "brown rice", "no rice", "all rice"},
+                {"chicken", "steak", "carnidas", "chorizo", "sofritas", "veggie meat", "no meat", "all meat"},
                 {"pinto beans", "black beans", "no Beans", "all Beans"},
-                { "mild", "medium", "hot", "no salsa", "all salsa"},
+                {"mild", "medium", "hot", "no salsa", "all salsa"},
                 {"lettuce", "fajita veggies", "no Veggies", "all Veggies"},
                 {"cheese", "no cheese"},
                 {"Guac", "no Guac"},
                 {"Queso", "no Queso"},
                 {"sour cream", "no sour cream"}
-             };
+        };
 
         //loops though 25 times and prints the final string after calling on burrGen method
-        while(burrito <= 25) {
-            int catagoryRan =  5 + (int)(Math.random() * ((9 - 5) + 1)) ;
-            finalStr = cbObj.burrGen( catagoryRan, allIng);
-            System.out.println("Burrito " + burrito+ " " + finalStr);
-            burrito ++;
+        while (burrito <= 25) {
+            int catagoryRan = 5 + (int) (Math.random() * ((9 - 5) + 1));
+            finalStr = burrGen(catagoryRan, allIng);
+            System.out.println("Burrito " + burrito + " " + finalStr);
+            burrito++;
         }
-        //the program below will display the
-
-
     }
     /**
      * This method will return a string of all the ingredients picked for each
@@ -39,11 +34,9 @@ public class ChipotleBurrito {
      * @return tempStr a string after all the choosen ingredients are concatenated.
      *
      */
-    public String burrGen( int catagoryRan , String [][] allIng){
+    public static String burrGen( int catagoryRan , String [][] allIng){
         String tempStr= "";
         double finalPrice = 3.00;
-        ArrayList<Integer> indexChoices = new ArrayList<Integer>();
-
         //Goes through each some rows  and chooses one item at a randomly generated index
 
         for (int r = 0; r < (catagoryRan); r++) {
@@ -53,7 +46,6 @@ public class ChipotleBurrito {
                     finalPrice += .50;
                 }
                 tempStr = tempStr+ " "+  allIng[r][ranChoice] +  ",";
-
         }
         //take out the last ',' character
         if (tempStr.charAt((tempStr.length()-1)) == ',' ){
@@ -62,14 +54,11 @@ public class ChipotleBurrito {
         tempStr = tempStr + " $" + finalPrice;
         return tempStr;
     }
-
-
-
-
-    public String strTotalIng (String str){
+/**  public String strTotalIng (String str){
         String finalStr = "";
+        String [] allIngr = {};
         return finalStr;
     }
-
+*/
 }
 
