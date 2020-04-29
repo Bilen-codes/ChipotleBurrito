@@ -3,10 +3,10 @@ This program will implement a robot that assembles 25 burritos and,
  displays all ingredients used along with the final price of the burrito.
 
 ##Pseudo-code 
-1. The program will first save all the ingident options in a 2D array
+1. The program will first save all the ingredients options in a 2D array
 2. The program will call on a method that will generate the random commination
 of the ingredients and send the final string to be displayed 25 times 
-3. The called method will first go through each rows of the 2D array (the food 
+3. The called method will first go through 5 to 9 rows randomly of the 2D array (the food 
 catagories) and for each it will generate a random number which will be choosen as the index where the ingredient will be picked 
 4. As the ingredients of each catagory is being choosen a totalPrice will be incremented by 0.50 for every chooice that doesn't contain the character sequence "no". 
 5. Inside the loop that will call on this method will be a print statment displaying the final string for each round. 

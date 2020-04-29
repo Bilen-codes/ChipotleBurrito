@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /*This program will implement a robot that assembles 25 burritos and,
  displays all ingredients used along with the final price of the burrito.*/
 public class ChipotleBurrito {
@@ -20,7 +22,8 @@ public class ChipotleBurrito {
 
         //loops though 25 times and prints the final string after calling on burrGen method
         while(burrito <= 25) {
-            finalStr = cbObj.burrGen( allIng);
+            int catagoryRan =  5 + (int)(Math.random() * ((9 - 5) + 1)) ;
+            finalStr = cbObj.burrGen( catagoryRan, allIng);
             System.out.println("Burrito " + burrito+ " " + finalStr);
             burrito ++;
         }
@@ -36,25 +39,36 @@ public class ChipotleBurrito {
      * @return tempStr a string after all the choosen ingredients are concatenated.
      *
      */
-    public String burrGen( String [][] allIng){
+    public String burrGen( int catagoryRan , String [][] allIng){
         String tempStr= "";
         double finalPrice = 3.00;
-        //Goes through each row and chooses one item at a randomly generated index
-        for (int r = 0; r < (allIng.length); r++) {
+        ArrayList<Integer> indexChoices = new ArrayList<Integer>();
+
+        //Goes through each some rows  and chooses one item at a randomly generated index
+
+        for (int r = 0; r < (catagoryRan); r++) {
                 int ranChoice = (int) (Math.random() * (allIng[r].length));
                 //increments the price by .50 each time an ingredient is choosen.
                 if (!(allIng[r][ranChoice].contains("no"))){
                     finalPrice += .50;
                 }
                 tempStr = tempStr+ " "+  allIng[r][ranChoice] +  ",";
-        }
 
+        }
         //take out the last ',' character
         if (tempStr.charAt((tempStr.length()-1)) == ',' ){
             tempStr = tempStr.substring(0,(tempStr.length()- 1) );
         }
         tempStr = tempStr + " $" + finalPrice;
         return tempStr;
+    }
+
+
+
+
+    public String strTotalIng (String str){
+        String finalStr = "";
+        return finalStr;
     }
 
 }
