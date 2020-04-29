@@ -2,13 +2,8 @@
 This program will implement a robot that assembles 25 burritos and,
  displays all ingredients used along with the final price of the burrito.
 
-<<<<<<< HEAD
-##Pseudo-code 
-1. The program will first save all the ingredients options in a 2D array
-=======
 ## Pseudo-code 
 1. The program will first save all the ingident options in a 2D array
->>>>>>> 8cd8724dda2f0740d751a6245f3fb53aefad60d5
 2. The program will call on a method that will generate the random commination
 of the ingredients and send the final string to be displayed 25 times 
 3. The called method will first go through 5 to 9 rows randomly of the 2D array (the food 
