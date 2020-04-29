@@ -13,17 +13,17 @@ catagories) and for each it will generate a random number which will be choosen 
 6. After displaying the 25 burritos assembled the program will exit. 
 
 ## Test cases 
-for (row = 0, row < ingredient's 2Darray length, row ++){
+for (row = 0, row < ingredient's 2Darray length, row ++){<br/>
 totalprice starts at 3.0.
-  1.row = 0   random number generated = 2 brown rice +0.50\ 
-    row = 1   random number generated = 4 sofritas +0.50. \
-    row = 2   random number generated = 0 pinto +0.50. 
-    row = 3   random number generated = 1 medium +0.50. 
-    row = 4   random number generated = 2 none.     
-    row = 5   random number generated = 1 no
-    row = 6   random number generated = 0 yes +50
-    row = 7   random number generated = 0 yes +50
-    row = 0   random number generated = 1 no 
+  1.row = 0   random number generated = 2 brown rice +0.50 <br/>
+    row = 1   random number generated = 4 sofritas +0.50. <br/>
+    row = 2   random number generated = 0 pinto +0.50. <br/>
+    row = 3   random number generated = 1 medium +0.50. <br/>
+    row = 4   random number generated = 2 none.     <br/>
+    row = 5   random number generated = 1 no<br/>
+    row = 6   random number generated = 0 yes +50<br/>
+    row = 7   random number generated = 0 yes +50<br/>
+    row = 0   random number generated = 1 no <br/>
 
 final string will be: brown rice, sofritas, pinto, medium, no veggies, no chees, guac, queso, no sour cream $6.00
  
